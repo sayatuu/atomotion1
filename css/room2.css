@@ -1,0 +1,97 @@
+@charset "UTF-8";
+body{
+    background-color: #c8c8c8;
+}
+
+
+/* ヘッダー */
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img{
+    max-width: 100%;
+}
+
+
+/* コンテナ */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #e2e2e2;
+    height: 100vh;
+}
+
+
+/* キャラクター */
+#slime{
+    position: absolute;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+}
+
+
+/* 背景 */
+.item {
+    position: absolute;
+}
+
+.item.board {
+    background-image: url(../images/room2/board.png);
+    background-repeat: no-repeat;
+    width: 455px;
+    height: 255px;
+    top: 150px;
+    left: 200px;
+    z-index: 10;
+}
+
+.item.table {
+    background-image: url(../images/room2/table.png);
+    background-repeat: no-repeat;
+    width: 583px;
+    height: 292px;
+    bottom: 100px;
+    left: 150px;
+    z-index: 20;
+}
+
+.item.tana {
+    background-image: url(../images/room2/tana.png);
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 556px;
+    bottom: 100px;
+    right: 50px;
+    z-index: 30;
+}
+
+.item.yuka {
+    background-color: #9bbfb2;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+
+/* フォント */
+.m-plus-rounded-1c-light {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 250px;
+    font-style: normal;
+  }
+
+
+/* パソコン */
+@media screen and (min-width: 1200px) {
+    .item.c {
+        right: 100px;
+    }
+}

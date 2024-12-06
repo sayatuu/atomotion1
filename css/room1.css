@@ -1,0 +1,116 @@
+@charset "UTF-8";
+body{
+    background-color: #b4e0ed;
+}
+
+
+/* ヘッダー */
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img{
+    max-width: 100%;
+}
+
+
+/* コンテナ */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #cff4ff;
+    height: 100vh;
+}
+
+
+/* キャラクター */
+#ball{
+    position: absolute;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+}
+
+
+/* 背景 */
+.item {
+    position: absolute;
+}
+
+.item.garland {
+    background-image: url(../images/room1/garland.png);
+    background-repeat: no-repeat;
+    width: 577px;
+    height: 157px;
+    top: 0px;
+    left: 50px;
+}
+
+.item.frame {
+    background-image: url(../images/room1/frame.png);
+    background-repeat: no-repeat;
+    width: 298px;
+    height: 219px;
+    top: 120px;
+    right: 100px;
+    z-index: 10;
+}
+
+.item.toybox {
+    background-image: url(../images/room1/toybox.png);
+    background-repeat: no-repeat;
+    width: 227px;
+    height: 228px;
+    bottom: 25px;
+    left: 20px;
+    z-index: 20;
+}
+
+.item.tana {
+    background-image: url(../images/room1/tana.png);
+    background-repeat: no-repeat;
+    width: 235px;
+    height: 261px;
+    bottom: 100px;
+    left: 310px;
+    z-index: 30;
+}
+
+.item.table {
+    background-image: url(../images/room1/table.png);
+    background-repeat: no-repeat;
+    width: 511px;
+    height: 356px;
+    bottom: 100px;
+    right: 50px;
+    z-index: 30;
+}
+
+.item.yuka {
+    background-color: #ffe0a9;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+
+/* フォント */
+.m-plus-rounded-1c-light {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 250px;
+    font-style: normal;
+  }
+
+
+/* パソコン */
+@media screen and (min-width: 1200px) {
+    .item.c {
+        right: 100px;
+    }
+}

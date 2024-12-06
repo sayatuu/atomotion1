@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body{
+    background-color: #562f96;
+}
+
+
+/* ヘッダー */
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img{
+    max-width: 100%;
+}
+
+
+/* コンテナ */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #6037a0;
+    height: 100vh;
+}
+
+
+/* キャラクター */
+#click{
+    position: absolute;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+}
+
+
+/* 背景 */
+.item {
+    position: absolute;
+}
+
+.item.lite {
+    background-image: url(../images/room9/lite.png);
+    background-repeat: no-repeat;
+    width: 576px;
+    height: 157px;
+    top: 0;
+    right: 100px;
+}
+
+.item.frame {
+    background-image: url(../images/room9/frame.png);
+    background-repeat: no-repeat;
+    width: 295px;
+    height: 249px;
+    top: 150px;
+    left: 100px;
+    z-index: 10;
+}
+
+.item.game {
+    background-image: url(../images/room9/game.png);
+    background-repeat: no-repeat;
+    width: 266px;
+    height: 179px;
+    top: 250px;
+    right: 100px;
+    z-index: 20;
+}
+
+.item.tana {
+    background-image: url(../images/room9/tana.png);
+    background-repeat: no-repeat;
+    width: 523px;
+    height: 227px;
+    bottom: 100px;
+    left: 50px;
+    z-index: 30;
+}
+
+.item.yuka{
+    background-color: #ea725f;
+    width: 1300px;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+
+/* フォント */
+.m-plus-rounded-1c-light {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 250px;
+    font-style: normal;
+  }
+
+
+/* パソコン */
+@media screen and (min-width: 1200px) {
+    .item.c {
+        right: 100px;
+    }
+}

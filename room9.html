@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>あともーしょん</title>
+  <meta name="description" content="ASMRを気軽に体験できるサイト">
+  <link rel="stylesheet" href="css/room9.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1>
+      <a href="index.html">
+        <img class="rogo" src="images/room8/rogo.png" alt="あともーしょん">
+      </a>
+    </h1>
+  </header>
+  <div class="container">
+    <img id="click" img src="images/room9/click.png" onclick="this.src='gif/click.png'" alt="">
+    <audio id="oto">
+      <source src="adio/click_audacity.mp3">
+      </source>
+    </audio>
+    <script>
+  (a => {
+              a.oncanplaythrough = () => {
+              document.getElementById('click').addEventListener('click', ()=>{a.play()});
+              };
+              })(new Audio("adio/click_audacity.mp3"));
+    </script>
+    <div class="item lite"></div>
+    <div class="item frame"></div>
+    <div class="item game"></div>
+    <div class="item tana"></div>
+    <div class="item yuka"></div>
+  </div>
+</body>
+
+</html>
